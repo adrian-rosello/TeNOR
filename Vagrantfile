@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
     cd ~
     git clone https://github.com/T-NOVA/TeNOR.git
     cd TeNOR/dependencies
-    ./install_dependencies.sh
+    echo -e "y\ny\ny\ny\n" | ./install_dependencies.sh
 
     cd ../
     #. ~/.rvm/scripts/rvm
